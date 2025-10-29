@@ -1,11 +1,11 @@
-GENERATE A 5 SECOND DELAY USING TIMER0 IN MODE1 AND TOGGLE PORT 2.7 CONTINUOUSLY
+<h1> MPMC SKILL ASSESSMENT 2 </h1>
+<h1> GENERATE A 5 SECOND DELAY USING TIMER0 IN MODE1 AND TOGGLE PORT 2.7 CONTINUOUSLY</h1>
 
-**Aim**
+<h1>AIM</h1>
 
    To write and execute a program using Timer0 in Mode 1 (16-bit timer mode) of the 8051 microcontroller to generate a 5-second delay and toggle Port 2.7 continuously.
 
-Apparatus Required
-
+<h1>APPARATUS REQUIRED</h1>
   8051 Microcontroller or AT89C51 Trainer Kit
 
   Keil µVision IDE
@@ -14,7 +14,7 @@ Apparatus Required
 
    Connecting Wires and Power Supply
    
- Algorithm
+ <h1>ALGORITHM</h1>
 
   1. Start the program.
 
@@ -33,9 +33,9 @@ Apparatus Required
   8. Toggle P2.7 every 5 seconds.
 
   9. Repeat the process continuously.
-     
-PROGRAM
- ```asm
+
+PROGRAM     
+```ASM
 ORG 0000H
 
 MAIN:   
@@ -55,18 +55,18 @@ REPEAT:
 
 WAIT_OV:
     JNB TF0, WAIT_OV      
-    CLR TR0               
-    CLR TF0                
+		CLR TR0               
+		CLR TF0                
     DJNZ R7, REPEAT        
 
     RET                  
 END
 ```
- OUTPUT
+<h1>OUTPUT </h1>
 <img width="1683" height="957" alt="Screenshot 2025-10-29 083942" src="https://github.com/user-attachments/assets/9db928eb-3638-401a-a650-ab75fe77c03a" />
 
 
-RESULT
+<h1>RESULT</h1>
 
   The program successfully generates a 5-second delay using Timer0 in Mode1, and the LED connected to Port 2.7 blinks continuously every 5 seconds.
 
