@@ -64,8 +64,6 @@ END
 ```
 <h1>OUTPUT </h1>
 <img width="1683" height="957" alt="Screenshot 2025-10-29 083942" src="https://github.com/user-attachments/assets/9db928eb-3638-401a-a650-ab75fe77c03a" />
-
-
 <h1>RESULT</h1>
 
   The program successfully generates a 5-second delay using Timer0 in Mode1, and the LED connected to Port 2.7 blinks continuously every 5 seconds.
